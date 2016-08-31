@@ -1,0 +1,13 @@
+{
+    "name": "simple-node-web-app",
+    "version": "1.0.0",
+    "description": "Node.js with express on Docker",
+    "author": "Shahidh <shahidh@hasura.io>",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "dependencies": {
+        "express": "^4.13.3"
+    }
+}
