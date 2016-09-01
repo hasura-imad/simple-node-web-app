@@ -1,3 +1,2 @@
 #!/bin/sh
-cd /app
-npm start
+cd /app && node server.js
