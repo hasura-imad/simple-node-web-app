@@ -5,5 +5,7 @@ RUN mkdir /app
 COPY app/runserver.sh /runserver.sh
 COPY app/src/package.json  /app/package.json
 RUN cd /app && npm install
+RUN mv /app/node_modules /node_modules
 COPY app/src/server.js /app/server.js
+ENV NODE_PATH /node_modules:$NODE_PATH
 CMD ["/runserver.sh"]
