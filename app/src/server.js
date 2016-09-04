@@ -9,7 +9,9 @@ const PORT = 80;
 // App
 const app = express();
 app.get('/', function (req, res) {
-  res.send('Hello world from imad ' + process.env.USER);
+  console.log(process.env.cwd);
+  res.sendFile('./index.html');
+  // res.send('Hello world from imad ' + process.env.USER);
 });
 
 app.listen(PORT);
