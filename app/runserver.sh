@@ -1,2 +1,2 @@
 #!/bin/sh
-cd /app && node server.js
+cd /app/imad-2016-app && node server.js
